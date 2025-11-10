@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #fff9f4;
+  color: #352208;
+}
+
+header {
+  background-color: #abffa7;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #b85612;
+}
+
+nav {
+  background: #c97e44;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0.8rem 0;
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 950px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+}
+
+/* Chef's Special (Bonus) */
+.chefs-special {
+  background: #fff3e0;
+  border-left: 7px solid #a5661c;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+.chefs-special .special-dish {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.chefs-special img {
+  width: 110px;
+  border-radius: 8px;
+}
+.chefs-special h3 {
+  margin: 0.4em 0 0.2em 0;
+}
+.chefs-special .price {
+  color: #d68135;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.menu-day {
+  background: #ffd6a5;
+  border-radius: 7px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  max-width: 330px;
+  box-shadow: 0 4px 8px rgba(220,140,60, 0.09);
+}
+
+/* Menu Section */
+.menu {
+  margin-bottom: 2.2rem;
+}
+.menu-category {
+  margin-bottom: 1.6rem;
+  border: 2px solid #faaf5f;
+  border-radius: 10px;
+  background: #fffef6;
+  padding: 1rem 1.1rem;
+}
+.menu-category h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #d68135;
+  font-size: 1.3rem;
+  letter-spacing: .7px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Menu Items Flex Layout */
+.menu-items {
+  display: flex;
+  gap: 2.1rem;
+  overflow-x: auto;
+  padding-bottom: 0.7rem;
+}
+.menu-item {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(205,126,60,0.07);
+  min-width: 235px;
+  max-width: 250px;
+  padding: 0.8rem;
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 7px;
+  margin-right: 0.7rem;
+}
+.menu-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: .3px;
+}
+.menu-item p {
+  margin: 0.3em 0;
+  font-size: .97rem;
+  color: #646464;
+}
+.menu-item .price {
+  color: #c97e44;
+  font-weight: bold;
+  margin-top: 0.1rem;
+}
+
+/* Contact Section */
+.contact {
+  background: #ffedd6;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+.contact a {
+  color: #d68135;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #ffe6a7;
+  color: #7f5a1b;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .menu-items {
+    gap: 1rem;
+  }
+  .menu-category,
+  .menu-item {
+    padding: .8rem;
+  }
+  .chefs-special .special-dish {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .chefs-special img {
+    width: 85px;
+  }
+}
+
+/* Optional: Smooth scrolling for overflow */
+.menu-items::-webkit-scrollbar {
+  height: 7px;
+  background: #ffe6a7;
+}
+.menu-items::-webkit-scrollbar-thumb {
+  background: #faaf5f;
+  border-radius: 5px;
+}
